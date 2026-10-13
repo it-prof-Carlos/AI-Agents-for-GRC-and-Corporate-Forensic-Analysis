@@ -1,0 +1,143 @@
+{
+  "ttps_catalogo": {
+    "T1059": "Command and Scripting Interpreter",
+    "T1566": "Phishing",
+    "T1078": "Valid Accounts",
+    "T1046": "Network Service Discovery",
+    "T1027": "Obfuscated Files or Information",
+    "T1005": "Data from Local System",
+    "T1567": "Exfiltration Over Web Service",
+    "T1021": "Remote Services",
+    "T1486": "Data Encrypted for Impact",
+    "T1490": "Inhibit System Recovery",
+    "T1047": "Windows Management Instrumentation",
+    "T1082": "System Information Discovery",
+    "T1497": "Virtualization/Sandbox Evasion",
+    "T1052": "Exfiltration Over Physical Medium",
+    "T1020": "Automated Exfiltration",
+    "T1114": "Email Collection",
+    "T1204": "User Execution",
+    "T1657": "Financial Theft",
+    "T1190": "Exploit Public-Facing Application",
+    "T1498": "Network Denial of Service",
+    "T1071": "Application Layer Protocol"
+  },
+  "perfiles": [
+    {
+      "nombre": "APT Estatal / Grupo de Ciberespionaje",
+      "motivacion": "Espionaje geopolítico y exfiltración sostenida",
+      "ttps": [
+        "T1059",
+        "T1566",
+        "T1078",
+        "T1046",
+        "T1027",
+        "T1005",
+        "T1567",
+        "T1021"
+      ],
+      "indicadores_conductuales": [
+        "Paciencia operativa y persistencia prolongada",
+        "Horarios alineados a la zona horaria del objetivo",
+        "Anti-forense activo y borrado de huellas"
+      ],
+      "mitigaciones": [
+        "Segmentación de red",
+        "Detección de anomalías UEBA",
+        "Hardening de credenciales (MFA/FIDO2)",
+        "Threat hunting proactivo"
+      ]
+    },
+    {
+      "nombre": "Ransomware-as-a-Service (Afiliado)",
+      "motivacion": "Lucro rápido mediante cifrado y extorsión doble",
+      "ttps": [
+        "T1486",
+        "T1490",
+        "T1047",
+        "T1021",
+        "T1082",
+        "T1497",
+        "T1567"
+      ],
+      "indicadores_conductuales": [
+        "Velocidad de ejecución elevada",
+        "Doble extorsión (cifrado + filtración)",
+        "Actividad en horario no laboral"
+      ],
+      "mitigaciones": [
+        "Backups inmutables 3-2-1",
+        "EDR con aislamiento de hosts",
+        "Deshabilitar macros de Office",
+        "Simulacros de respuesta a incidentes"
+      ]
+    },
+    {
+      "nombre": "Insider Threat (Amenaza Interna)",
+      "motivacion": "Frustración, coerción o beneficio económico personal",
+      "ttps": [
+        "T1078",
+        "T1005",
+        "T1567",
+        "T1052",
+        "T1020",
+        "T1114"
+      ],
+      "indicadores_conductuales": [
+        "Acceso fuera del perfil habitual",
+        "Descargas masivas previas a una desvinculación",
+        "Evasión deliberada de controles DLP"
+      ],
+      "mitigaciones": [
+        "UEBA y análisis de comportamiento",
+        "DLP con clasificación de datos",
+        "Mínimo privilegio",
+        "Programa de gestión de riesgo de insider"
+      ]
+    },
+    {
+      "nombre": "Grupo de Fraude / BEC (Business Email Compromise)",
+      "motivacion": "Ingeniería social y fraude financiero",
+      "ttps": [
+        "T1566",
+        "T1078",
+        "T1204",
+        "T1114",
+        "T1020",
+        "T1657"
+      ],
+      "indicadores_conductuales": [
+        "Suplantación de identidad de directivos/proveedores",
+        "Presión temporal sobre el pagador",
+        "Cambios de datos bancarios"
+      ],
+      "mitigaciones": [
+        "Verificación fuera de banda de pagos",
+        "DMARC/DKIM/SPF estrictos",
+        "Concientización continua",
+        "Doble aprobación de transferencias"
+      ]
+    },
+    {
+      "nombre": "Script Kiddie / Actor Oportunista",
+      "motivacion": "Notoriedad, práctica o lucro menor con herramientas públicas",
+      "ttps": [
+        "T1190",
+        "T1059",
+        "T1046",
+        "T1498",
+        "T1071"
+      ],
+      "indicadores_conductuales": [
+        "Ruido operativo alto",
+        "Herramientas públicas sin modificar",
+        "Reintentos masivos"
+      ],
+      "mitigaciones": [
+        "WAF y parcheo priorizado",
+        "Rate limiting",
+        "Gestión de superficie expuesta (EASM)"
+      ]
+    }
+  ]
+}
