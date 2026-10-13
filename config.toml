@@ -1,0 +1,10 @@
+# Tema oscuro azul con texto blanco
+[theme]
+base = "dark"
+primaryColor = "#4FC3F7"
+backgroundColor = "#0A1F44"
+secondaryBackgroundColor = "#102A5C"
+textColor = "#FFFFFF"
+
+[browser]
+gatherUsageStats = false
