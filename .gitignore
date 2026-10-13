@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.egg-info/
+.pytest_cache/
+aegis/data/audit_log.jsonl
+reports/*.jsonl
+.DS_Store
