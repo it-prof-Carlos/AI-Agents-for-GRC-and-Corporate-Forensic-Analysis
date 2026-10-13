@@ -1,6 +1,6 @@
 # 🛡️ AEGIS — AI Governance, Risk, Forensics & Threat Profiling Platform
 
-> **Supervisión GRC y análisis forense para agentes de Inteligencia Artificial en entornos corporativos.**
+> **Supervisión GRC y Análisis Forense para agentes de Inteligencia Artificial en Entornos Corporativos.**
 > DLP pre-envío · Human-in-the-Loop · Audit trail a prueba de manipulación · Scoring OWASP LLM Top 10 (2025) · Perfilamiento criminal aplicado a CTI.
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
