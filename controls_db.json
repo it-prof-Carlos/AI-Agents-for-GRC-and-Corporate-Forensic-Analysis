@@ -1,0 +1,327 @@
+{
+  "_nota": "OWASP Top 10 for LLM Applications edición 2025. 'id_2023' indica el identificador equivalente en la v1.1 (2023) para trazabilidad con documentos anteriores.",
+  "iso_27001": [
+    {
+      "control": "A.5.15 Control de acceso",
+      "cubre": [
+        "LLM06",
+        "LLM02"
+      ]
+    },
+    {
+      "control": "A.5.21 Seguridad de la información en la cadena de suministro TIC",
+      "cubre": [
+        "LLM03"
+      ]
+    },
+    {
+      "control": "A.5.23 Seguridad de la información para el uso de servicios en la nube",
+      "cubre": [
+        "LLM02"
+      ]
+    },
+    {
+      "control": "A.5.34 Privacidad y protección de la PII",
+      "cubre": [
+        "LLM02"
+      ]
+    },
+    {
+      "control": "A.8.2 Derechos de acceso privilegiado",
+      "cubre": [
+        "LLM06"
+      ]
+    },
+    {
+      "control": "A.8.3 Restricción de acceso a la información",
+      "cubre": [
+        "LLM06",
+        "LLM02",
+        "LLM07"
+      ]
+    },
+    {
+      "control": "A.8.6 Gestión de la capacidad",
+      "cubre": [
+        "LLM10"
+      ]
+    },
+    {
+      "control": "A.8.9 Gestión de la configuración",
+      "cubre": [
+        "LLM06",
+        "LLM03"
+      ]
+    },
+    {
+      "control": "A.8.11 Enmascaramiento de datos",
+      "cubre": [
+        "LLM02"
+      ]
+    },
+    {
+      "control": "A.8.12 Prevención de fuga de datos",
+      "cubre": [
+        "LLM02",
+        "LLM07"
+      ]
+    },
+    {
+      "control": "A.8.15 Registro de eventos",
+      "cubre": [
+        "LLM06",
+        "LLM01"
+      ]
+    },
+    {
+      "control": "A.8.16 Actividades de seguimiento",
+      "cubre": [
+        "LLM06",
+        "LLM10",
+        "LLM01"
+      ]
+    },
+    {
+      "control": "A.8.20 Seguridad de las redes",
+      "cubre": [
+        "LLM02"
+      ]
+    },
+    {
+      "control": "A.8.22 Segregación de redes",
+      "cubre": [
+        "LLM02"
+      ]
+    },
+    {
+      "control": "A.8.24 Uso de criptografía",
+      "cubre": [
+        "LLM03"
+      ]
+    },
+    {
+      "control": "A.8.25 Ciclo de vida de desarrollo seguro",
+      "cubre": [
+        "LLM03",
+        "LLM05"
+      ]
+    },
+    {
+      "control": "A.8.28 Codificación segura",
+      "cubre": [
+        "LLM06",
+        "LLM05",
+        "LLM01"
+      ]
+    }
+  ],
+  "nist_800_53": [
+    {
+      "control": "AC-3 Aplicación del acceso (Access Enforcement)",
+      "cubre": [
+        "LLM06",
+        "LLM02"
+      ]
+    },
+    {
+      "control": "AC-4 Aplicación del control de flujo de información",
+      "cubre": [
+        "LLM02",
+        "LLM07"
+      ]
+    },
+    {
+      "control": "AC-6 Mínimo privilegio",
+      "cubre": [
+        "LLM06"
+      ]
+    },
+    {
+      "control": "AU-2 Registro de eventos (Event Logging)",
+      "cubre": [
+        "LLM06",
+        "LLM03",
+        "LLM01"
+      ]
+    },
+    {
+      "control": "AU-9 Protección de la información de auditoría",
+      "cubre": [
+        "LLM06"
+      ]
+    },
+    {
+      "control": "AU-10 No repudio",
+      "cubre": [
+        "LLM06"
+      ]
+    },
+    {
+      "control": "CM-7 Funcionalidad mínima",
+      "cubre": [
+        "LLM03",
+        "LLM06"
+      ]
+    },
+    {
+      "control": "SA-15 Proceso, estándares y herramientas de desarrollo",
+      "cubre": [
+        "LLM03"
+      ]
+    },
+    {
+      "control": "SC-5 Protección contra denegación de servicio",
+      "cubre": [
+        "LLM10"
+      ]
+    },
+    {
+      "control": "SC-7 Protección de límites",
+      "cubre": [
+        "LLM02",
+        "LLM07"
+      ]
+    },
+    {
+      "control": "SI-4 Monitoreo del sistema",
+      "cubre": [
+        "LLM01",
+        "LLM07",
+        "LLM10",
+        "LLM06"
+      ]
+    },
+    {
+      "control": "SI-7 Integridad de software, firmware e información",
+      "cubre": [
+        "LLM03",
+        "LLM04"
+      ]
+    },
+    {
+      "control": "SI-10 Validación de entradas de información",
+      "cubre": [
+        "LLM01",
+        "LLM05"
+      ]
+    },
+    {
+      "control": "SR-3 Controles y procesos de cadena de suministro",
+      "cubre": [
+        "LLM03"
+      ]
+    }
+  ],
+  "owasp_llm": [
+    {
+      "id": "LLM01",
+      "nombre": "Prompt Injection",
+      "id_2023": "LLM01",
+      "descripcion": "Manipulación de la entrada que altera el comportamiento del modelo o del agente.",
+      "mitigaciones": [
+        "Validación de entradas",
+        "Delimitadores estrictos",
+        "Mínimo privilegio del agente"
+      ]
+    },
+    {
+      "id": "LLM02",
+      "nombre": "Sensitive Information Disclosure",
+      "id_2023": "LLM06",
+      "descripcion": "Fuga de secretos, PII o topología hacia el modelo, sus salidas o terceros (incluye el contexto que un agente envía al LLM).",
+      "mitigaciones": [
+        "DLP pre-envío (proxy loopback)",
+        "Redacción sintética",
+        "Control de egress / Zero telemetry"
+      ]
+    },
+    {
+      "id": "LLM03",
+      "nombre": "Supply Chain",
+      "id_2023": "LLM05",
+      "descripcion": "Componentes, plugins, modelos o instaladores comprometidos (p. ej. curl|bash).",
+      "mitigaciones": [
+        "Verificación SHA-256/PKI",
+        "SBOM",
+        "Repositorios y versiones fijadas"
+      ]
+    },
+    {
+      "id": "LLM04",
+      "nombre": "Data and Model Poisoning",
+      "id_2023": "LLM03",
+      "descripcion": "Manipulación de datos de entrenamiento, ajuste fino o embeddings.",
+      "mitigaciones": [
+        "Validación de procedencia de datos",
+        "Evaluaciones adversariales",
+        "Monitoreo de deriva"
+      ]
+    },
+    {
+      "id": "LLM05",
+      "nombre": "Improper Output Handling",
+      "id_2023": "LLM02",
+      "descripcion": "Salidas del modelo consumidas sin validación por sistemas posteriores.",
+      "mitigaciones": [
+        "Validar/sanear salidas",
+        "Codificación contextual",
+        "Ejecución en sandbox"
+      ]
+    },
+    {
+      "id": "LLM06",
+      "nombre": "Excessive Agency",
+      "id_2023": "LLM08",
+      "descripcion": "Autonomía, funcionalidad o permisos excesivos del agente sobre el entorno.",
+      "mitigaciones": [
+        "HITL obligatorio",
+        "Sandboxing (Seccomp/AppArmor)",
+        "Principio de mínimo privilegio"
+      ]
+    },
+    {
+      "id": "LLM07",
+      "nombre": "System Prompt Leakage",
+      "id_2023": "—",
+      "descripcion": "Exposición de instrucciones internas del sistema que contienen lógica o secretos.",
+      "mitigaciones": [
+        "No colocar secretos en prompts",
+        "Aislamiento de prompts",
+        "Detección de anomalías"
+      ]
+    },
+    {
+      "id": "LLM08",
+      "nombre": "Vector and Embedding Weaknesses",
+      "id_2023": "—",
+      "descripcion": "Debilidades en pipelines RAG y almacenes vectoriales.",
+      "mitigaciones": [
+        "Control de acceso por tenant",
+        "Validación de fuentes",
+        "Registro de recuperaciones"
+      ]
+    },
+    {
+      "id": "LLM09",
+      "nombre": "Misinformation",
+      "id_2023": "LLM09",
+      "descripcion": "Salidas falsas o engañosas tomadas como confiables (sobre-confianza).",
+      "mitigaciones": [
+        "Verificación humana",
+        "Grounding/RAG con fuentes",
+        "Comunicación de límites"
+      ]
+    },
+    {
+      "id": "LLM10",
+      "nombre": "Unbounded Consumption",
+      "id_2023": "LLM04",
+      "descripcion": "Consumo descontrolado de cómputo/tokens: bucles de error y Denial-of-Wallet.",
+      "mitigaciones": [
+        "Guardrails (agents.md)",
+        "Cuotas y presupuestos de API",
+        "Timeouts y límites de reintento"
+      ]
+    }
+  ]
+}
