@@ -16,7 +16,7 @@
 La adopción acelerada de **agentes de IA en la terminal** (*Terminal Coding Agents*) multiplica la productividad,
 pero introduce vectores de riesgo estructurales,  que las configuraciones por defecto no mitigan. 
 AEGIS implementa, como herramienta funcional, un  **marco de supervisión forense y GRC**, en base a  Operaciones OT/IT  sobre infraestructuras  en Explotacion de Tierras Raras y  Unidades Operativas  en Zonas de Riesgo
-donde operan  Corporaciones  Internacionales : Triple Frontera Norte de Argentina -Bolivia -Paraguay . SIGEN Report AARGENTINA 2026 
+donde operan  Corporaciones  Internacionales : Triple Frontera Norte de Argentina -Bolivia -Paraguay . SIGEN Report ARGENTINA 2026 
 MESA REGIONAL DE LITIO Periodos 2025 -2026 
 
 | Vector de riesgo (Informe §2.4) | Respuesta en AEGIS |
