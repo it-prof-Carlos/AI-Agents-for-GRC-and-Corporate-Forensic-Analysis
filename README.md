@@ -37,7 +37,7 @@ MESA REGIONAL DE LITIO Periodos 2025 -2026
 | Cadena forense HMAC-SHA256 (detección de alteración, borrado intermedio y líneas corruptas) | ✅ Implementado y testeado |
 | Scoring de riesgo, perfilador MITRE ATT&CK, mapeo ISO/NIST/OWASP | ✅ Implementado y testeado |
 | Aprobación HITL interactiva real (hoy el dashboard **clasifica** la acción) | 🔜 Roadmap |
-| Hooks eBPF, perfiles Seccomp / AppArmor (Informe §3.2) | 🔜 Roadmap (diseño en el informe) |
+| Hooks eBPF, perfiles Seccomp / AppArmor  | 🔜 Roadmap  |
 | Verificación automática de firmas/hashes de instaladores | 🔜 Roadmap |
 | Detección AST (hoy: regex) | 🔜 Roadmap |
 
